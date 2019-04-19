@@ -12,10 +12,11 @@
 <body>
 <p>
 this is sample  html
+<p th:text="#{ProductName}"> jkhkjh</p>
  <article th:each="product : ${products}">
         <header>
             <!-- Blog Post Title - ${post.title} -->
-            <h1 th:text="${product.name}"> Product Name </h1> : <h2 th="${product.price}"> price</h2>
+            <h1 th:text="${product.name}"> <p th:text="ProductName"> </p></h1> : <h2 th="${product.price}"> price</h2>
 
             <!-- Blog Post Date - th:text="${post.posted} -->
             <!-- date formatting th:text="${#calendars.format(post.posted,'mm/dd/yyyy')}" -->
