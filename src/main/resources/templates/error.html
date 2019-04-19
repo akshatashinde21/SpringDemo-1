@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymleaf.org">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Error Handling Demo</title>
+	
+	<link rel="stylesheet" href="../static/css/blog.css" th:href="@{/css/blog.css}"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+
+	
+</head>
+<body>
+
+	<div class="container">
+	
+		
+		
+		<h2>Standard Error Handler</h2>
+		
+		<p th:text="${error}">error</p>
+		<p th:text="${message}">message</p>	
+		
+	
+	</div>
+
+</body>
+</html>
